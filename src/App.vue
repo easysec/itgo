@@ -1,30 +1,33 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="bg-gray-50 text-gray-900">
+    <AppHeader />
+    <main class="container mx-auto p-6">
+      <AboutUs />
+      <Services />
+      <Contact />
+      <Tickets />
+    </main>
+    <Footer />
+  </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import AppHeader from "@/components/AppHeader.vue";
+import AboutUs from "@/views/AboutUs.vue";
+import Services from "@/views/Services.vue";
+import Contact from "@/views/Contact.vue";
+import Tickets from "@/views/Tickets.vue";
+import Footer from "@/components/Footer.vue";
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+export default {
+  name: "App",
+  components: {
+    AppHeader,
+    AboutUs,
+    Services,
+    Contact,
+    Tickets,
+    Footer,
+  },
+};
+</script>
