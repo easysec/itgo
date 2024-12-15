@@ -1,20 +1,19 @@
 <template>
-    <footer class="bg-green-700 text-white py-6">
-      <div class="container mx-auto text-center">
-        <p class="text-sm">&copy; 2024 IT Services. Todos los derechos reservados.</p>
-        <div class="mt-4 space-x-4">
-          <a href="#about" class="hover:underline">Sobre Nosotros</a>
-          <a href="#services" class="hover:underline">Servicios</a>
-          <a href="#contact" class="hover:underline">Contacto</a>
-          <a href="#tickets" class="hover:underline">Tiquetes</a>
+  <footer class="bg-green-700 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-sm">&copy; 2024 ITGO. Todos los derechos reservados.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <router-link to="/" class="hover:underline">Home</router-link>
+          <router-link to="/about" class="hover:underline">About</router-link>
+          <router-link to="/services" class="hover:underline">Services</router-link>
+          <router-link to="/contact" class="hover:underline">Contact</router-link>
         </div>
       </div>
-    </footer>
-  </template>
-  
-  <script>
-  export default {
-    name: "Footer",
-  };
-  </script>
-  
+    </div>
+  </footer>
+</template>
+
+<script>
+export default {};
+</script>
